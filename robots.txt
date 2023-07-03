@@ -1,0 +1,11 @@
+# /robots.txt file for http://webcrawler.com/
+# 
+
+User-agent: webcrawler
+Disallow:
+
+User-agent: lycra
+Disallow: 
+
+User-agent: *
+Disallow

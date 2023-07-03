@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Fotoos Hortusbuurt</title>
+<base target="scherm">
+<LINK HREF="http://www.hortusbuurt.nl/hortus.css" REL="stylesheet" TYPE="text/css">
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript" SRC="base.js"></SCRIPT>
+
+
+<script src="closePopImage.js"></script>
+
+
+<script type="text/javascript"><!--
+//you can style this, but don't try to text-align it to the right, it will break the resizing effect
+//keep it narrow, if it is wider than the image, the window will wrap to this width
+//the makeright class tells the script to automatically align it to the right
+var extraHTML = '<br><a href="javascript:window.close()" style="text-decoration:none;color:#777;background-color:#bbb;font-weight:bold;border-left:2px solid #000;" class="makeright">Close<\/a>';
+//--></script>
+
+
+</head>
+<body>
+
+<table border='0' width='50%' align="center">
+ <tr>
+   <td id='head' align='center'><h3> Buurtgenoten!</h3><h4>
+   Hekel aan popups: druk op visje hieronder en je omzeilt ze..</h4>
+   </td>
+ </tr>
+ <tr>
+   <td id='content' >
+<a href="fishView.jpg" onclick="return popImageExtra(this.href,'Site author',true,3000,extraHTML);">link</a>
+
+
+</td></tr>
+</table>
+</body>
+</html>
+

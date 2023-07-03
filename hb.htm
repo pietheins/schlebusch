@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Fotoos Hortusbuurt</title>
+<base target="fotoos">
+<LINK HREF="http://www.hortusbuurt.nl/hortus.css" REL="stylesheet" TYPE="text/css">
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript" SRC="base.js"></SCRIPT>
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+
+		var popup = new Object();
+
+        function sluitpopup()
+            {
+              if (!popup.closed)
+              {
+              popup.close();
+              }
+             }
+
+		function MaakPopup(xxx,breed,hoog)
+		{
+    	    if ( breed > 700 )
+		    {   hoog = ( 700 * hoog / breed );
+		        breed = 700 ;
+		    }
+		    if ( hoog > 500 )
+		    {   breed = ( 500 * breed / hoog);
+		        hoog =  500 ;
+		    }
+		    breed = breed + 20 ;
+		    hoog = hoog + 25 ;
+
+
+    popup =	window.open(xxx,'fotoB','width='+breed+' , height='+hoog+' top=10 left=10 resizable=yes');
+
+		     popup.focus();
+		}
+
+</script>
+
+</head>
+<body onload="MaakPopup('http://www.hortusbuurt.nl/groengeel.gif',100,100);sluitpopup();return false;" onunload="sluitpopup();return false;">
+
+<table border='0' width='100%' align="center">
+ <tr>
+   <td id='head' align='center'><h3> Buurtgenoten!</h3><h4>(<b>Wacht nog even</b> voor u op de afbeeldingen klikt. Misschien moet u ook nog de <b>popup-blokkade opheffen</b>, zie menukeuze EXTRA bij Internet Explorer.)<br></h4>
+   </td>
+ </tr>
+ <tr>
+   <td id='content' >
+
+<table border='1' align=center> <tr>
+<td><a href="javascript:openWindow('fishView.jpg','fotoB','width=300,height=400');"    onclick="sluitpopup();MaakPopup('fishView.jpg',690,988);return(false);"  ><img src='fishView.jpg'></a><br> </td>
+<td><a href="javascript:openWindow('fishView.jpg','fotoB','width=300,height=400');"    onclick="sluitpopup();MaakPopup('fishView.jpg',216,169);return(false);"  ><img src='fishView.jpg'></a><br> </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>
+
